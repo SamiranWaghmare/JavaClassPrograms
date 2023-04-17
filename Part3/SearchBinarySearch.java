@@ -2,7 +2,7 @@ package Part3;
 
 import java.util.Scanner;
 
-public class SortArrayBinarySearch {
+public class SearchBinarySearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = {1,9,23,34,58,98,104,483,563,823};
