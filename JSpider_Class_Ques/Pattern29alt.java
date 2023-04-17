@@ -9,9 +9,9 @@ public class Pattern29alt {
                 System.out.print("  ");
             }for(int j = 1 ; j<=i ; j++){
                 if(j==1){
-                    System.out.print(i);
+                    System.out.print(j);
                 }else{
-                    System.out.print("*"+j);
+                    System.out.print(" * "+j);
                 }
             }
             System.out.println();

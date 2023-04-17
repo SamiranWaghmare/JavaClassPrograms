@@ -6,15 +6,15 @@ public class Fibonacci {
         }
 
     public static void printFibonacci(int n){
-        int a = 0;
-        int b = 1;
+        int n1 = 0;
+        int n2 = 1;
         int sum = 0;
 
         for(int i = 1; i <= n ; i++){
             System.out.println(sum);
-            a = b;
-            b = sum;
-            sum = a + b ;
+            n1 = n2;
+            n2 = sum;
+            sum = n1 + n2 ;
         }
     }
 }

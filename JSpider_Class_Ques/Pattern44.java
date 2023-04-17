@@ -1,6 +1,6 @@
 package JSpider_Class_Ques;
 
-public class Pattern44{
+public class  Pattern44{
     public static void main(String[] args) {
         int n = 7   ;
         int sp = n/2;

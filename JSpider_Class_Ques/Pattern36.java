@@ -2,7 +2,7 @@ package JSpider_Class_Ques;
 
 public class Pattern36 {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 3;
         int sp = n ;
         for(int i = n; i >= 1 ; i--){
 
