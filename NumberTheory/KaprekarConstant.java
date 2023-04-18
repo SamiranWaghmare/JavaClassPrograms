@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class KaprekarConstant {
     public static void main(String[] args) {
-        int n = 6174;
+        int n = 8088;
         int count = 0;
 
         while (n != 6174){

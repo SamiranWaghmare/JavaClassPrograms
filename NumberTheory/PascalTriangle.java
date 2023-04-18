@@ -22,6 +22,10 @@ public class PascalTriangle {
         }
 
         for (row = 0; row < size; row++) {
+            for(int i = 1 ; i < size-row ; i++){
+                System.out.print(" ");
+            }
+
             for (col = 0; col <= row; col++) {
                 System.out.print(pasT[row][col] + " ");
             }
