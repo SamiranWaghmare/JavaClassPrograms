@@ -15,24 +15,20 @@ public class VaccumMatrix {
 
     public static int [][] spiralclock(int n){
         int a[][]=new  int[n*2-1][n*2-1];
-        int p = a.length/2+1;
+        int p = n;
 
         for(int i=0,j=a.length-1;i<j;i++,j--){
 
             for(int k=i;k<j;k++){
-//                p++;
                 a[i][k]=p;
             }
             for(int k=i;k<j;k++){
-//                p++;
                 a[k][j]=p;
             }
             for(int k=j;k>i;k--){
-//                p++;
                 a[j][k]=p;
             }
             for(int k=j;k>i;k--){
-//                p++;
                 a[k][i]=p;
             }
             p--;

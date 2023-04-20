@@ -2,23 +2,26 @@ package TestPackage;
 
 public class TestClass2 {
     public static void main(String[] args) {
-    String s = "This is Sparta";
-
-    char[] ca = s.toCharArray();
-    int first = 0;
-
-    for(int i = 0 ; i < s.length() ; i++){
-        if(i==0 && ca[i] != ' ' || ca[i] != ' ' && ca[i-1] == ' ' ){
-            first = i;
-        }
-        if(i==s.length()-1 && ca[i] != ' ' || ca[i] != ' ' && ca[i+1] == ' '){
-            char temp = ca[first];
-            ca[first] = ca[i];
-            ca[i] = temp;
-        }
-    }
-
-        System.out.println(ca);
+        System.out.println(power(2,-5));
 
     }
+
+    public static double power(double base , int exp){
+        double result = 1;
+        if(exp == 0)
+            return 1;
+
+        int absExp = Math.abs(exp);
+
+        for(int i = 1 ; i <= absExp ; i++){
+            result = result*base;
+        }
+
+        if(exp < 0 )
+            return 1/result;
+
+        return result;
+
+    }
+
 }
