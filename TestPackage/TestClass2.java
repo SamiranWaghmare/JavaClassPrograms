@@ -4,21 +4,27 @@ import java.util.Arrays;
 
 public class TestClass2 {
     public static void main(String[] args) {
-        int[] arr = {-1,-4,-3,-2,-434,0};
-        shuffle(arr);
-        System.out.println(Arrays.toString(arr));
+        String  s = "Hello world";
+        System.out.println("The string " + s + " has " + unique(s) + " unique chars" );
 
     }
 
-    public static void shuffle(int[] arr){
+    public static int unique(String s){
+        int count = 0;
+        boolean[] elements = new boolean[128];
+        s = s.toLowerCase();
 
-        for(int i = 0 ; i < arr.length ; i++){
-
-            int index = i + (int)(Math.random()*(arr.length-i));
-            int temp = arr[index];
-            arr[index] = arr[i];
-            arr[i] = temp;
+        for(int i = 0 ; i < s.length() ; i++){
+            elements[(int)s.charAt(i)] = true;
         }
+
+        for(int i = 0 ; i < elements.length; i++){
+            if(elements[i])
+                count++;
+        }
+
+        return count;
     }
+
 
 }

@@ -1,4 +1,6 @@
-package Part3;
+package Algorithms;
+
+import Part3.Arrays;
 
 import java.util.Scanner;
 

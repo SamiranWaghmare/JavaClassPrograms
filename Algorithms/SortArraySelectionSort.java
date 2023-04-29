@@ -1,4 +1,6 @@
-package Part3;
+package Algorithms;
+
+import Part3.Arrays;
 
 public class SortArraySelectionSort {
     public static void main(String[] args) {
